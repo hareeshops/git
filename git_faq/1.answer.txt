@@ -1,5 +1,0 @@
-# Author : Hareesh Arava
-
-1. difference between git pull and git fetch?
-Ans: git pull: 
-     git fetch:
