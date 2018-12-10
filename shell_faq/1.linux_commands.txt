@@ -1,0 +1,517 @@
+*************ls***************
+$ ls
+This Linux command shows a list of all the files and directories present in the current working directory of your machine.
+
+$ ls ~
+This command shows the list of files that are present in your home directory.
+
+$ ls -ltr
+This command will display you the file having named mentioned in command and will give you all the details of that file.
+This command will list you all files according to the order of time in which they were created. Here “ltr” stands for l- long listing, t- time, r- recursive. The list displayed contains a file name, file permissions, owner of the file, group, date and time of file creation and links.
+
+
+************df*************
+$ df
+“df” is “disk filesystem”. The actual task of this command is to show a detailed summary list of the total disk space available and used disk space on file system of your Linux system
+
+$ df -h
+‘-h’ parameter is used to display the summary of the total disk space used and available on your Linux file system in human readable form, this means it shows the details in the form of bytes, MB (megabyte) and GB (gigabyte).
+
+
+************mkdir*************
+$ mkdir
+If you want to create a new directory on your Linux filesystem you have to use “mkdir” command. For example- “mkdir dataflair”, this command will create a directory named dataflair on your Linux filesystem.
+
+
+************rm*************
+$ rm
+This command is used to remove a file from your Linux filesystem. Executing this command will delete that particular file of which you had written name followed by rm. For example- “rm data”, this will remove file named data present in your current working directory.
+
+
+$ rmdir
+This command is used to remove a complete directory from your Linux filesystem. This command will remove directory specified by you. For example- “rmdir mystuffs” will delete the mystuffs directory from your Linux filesystem.
+
+************pwd*************
+$ pwd
+“pwd” = “Present Working Directory”. It gives you the name of the directory name on which you are currently present or working and shows the path of that directory.
+
+************cd*************
+$ cd
+“cd” is change directory. By the name itself, it is clear that this command is the most useful command of Linux. With the help of this command, a user can easily navigate to the directory of his choice at any moment of time. This command changes the present working directory of the user, to the directory name specified by the user in which he wants to navigate.
+
+
+$ cd /
+This command is used to navigate to the root directory of users Linux filesystem.
+
+
+$ cd
+$ cd ~
+This command is used to navigate to the home directory of the user.
+
+$ cd..
+This command is used to navigate one directory level up of the user current working directory.
+
+
+$ cd -
+The usage of cd command is to navigate to the previous directory or simply go one directory back to the directory which user visited. It is used to go one step back to the recently visited directory.
+
+************clear*************
+$ clear
+Now after practicing a number of commands, it is obvious that your command terminal has fully filled up with lots of commands and their usage. Hence to practice a new command from a fresh new screen we use “clear” command. This command clears all the data present on your Linux terminal window.
+
+************mv*************
+$ mv
+The main function of this command is to change the name of a file/directory or to move a particular file/directory from one place to another.
+
+************cp*************
+$ cp
+This command is used to copy files/directory from one place to another. With the help of this command, the user can easily create multiple copies of a files/directories.
+
+************cat*************
+$ cat
+This command displays all the contents of a file specified by the user on the standard output device i.e. your computer screen.
+
+************du*************
+$ du
+The term “du” is a short form of “Disk Utility”. The actual work of this command is to display you the details about how much space is occupied by a file/directory in the disk.
+
+$ du -sh
+In the above command (“-s”= Summary and “-h”= Human Readable). This means it shows the details of the space occupied by a file/directory on disk in a human readable format like bytes, megabytes, gigabytes, etc.
+
+
+************touch*************
+$ touch
+This command creates an empty file with the specified name in the present working directory of the user. An empty file with size 0 bytes gets created which remains unchanged until the user makes any changes to it.
+
+$ touch filename
+It creates new empty file. It is another way to create a file. It is also used to change date and time of most recent access and modification.
+
+************who*************
+$ who
+It displays the number of users who are currently logged on your Linux operating system.
+
+************echo*************
+$ echo
+This command displays all the text written after the word “echo”. For example- echo My House name is Sweet Dreams, this command output will be: “My House name is Sweet Dreams”.
+
+$ echo String
+It writes arguments to the standard output or display line of text. It is mostly used in batch and scripts. It plays an important role in building shell script.
+
+************date*************
+$ date
+This command displays the current date and time of your system. By using this command you can easily know the current day and time on Linux terminal.
+
+$ date "+%m/%y/%d"
+This command prints the date is the specified format
+
+
+
+$ date "+%s"
+This command prints the date in seconds
+
+************gzip*************
+$ gzip filename
+It compresses content of files, gives extension of .gz and needs to be uncompressed before use.
+
+
+************locate*************
+$ locate filename
+It is used to search find files by its name. It searches extremely fast, runs in background to trace the location of files. locate command is fast because it runs in background process in a system. It searches the file and stores them in a database.
+
+************grep*************
+$ grep “String” filename
+It mainly searches the text or searches the file for lines containing a match to the given strings or words. It searches the mention string in given file.
+
+$ grep "String" filename1 filename2
+It searches the mentioned String in multiple files mentioned.
+
+************logout*************
+$ logout
+To exit a login shell or to get out from current session. It can be used by any normal user to end their session.
+
+************exit*************
+$ exit
+To exit a shell like log out. It will remind that some jobs are running in background and again writing exit will terminate them and finally it will close the shell.
+
+************wc*************
+$ wc [options] filename
+Prints the number of newlines, word, bytes in a file. It is used to find out the number of newline count, word count, byte and characters count in files.
+
+$ wc -l filename
+Prints the number of lines in a file.
+
+$ wc -w filename
+Prints the number of words in a file.
+
+$ wc -c filename
+Display the count of bytes of file.
+
+$ cat file.txt | wc –l
+This command returns the number of lines in the file
+
+
+$ cat file.txt | wc -w
+This command returns the number of words in the file
+
+
+$ cat file.txt | wc -c
+This command returns the number of characters in the file
+************sort*************
+$ sort filename
+Simply sorts the file in alphabetical order. It is used for printing lines of input text files and concatenation of all files in sorted order. It takes blank space like field separator .entire input file like sort key. It is important to know that sort command don’t actually sort the files but only print the sorted output.
+
+$ sort -u filename
+-u removes duplicate records in a file and only first record is retained.
+
+$ sort -n file
+It sorts a file numerically.
+
+$ sort filr.txt
+This command sorts the file column wise, it first sorts the first column and the corresponding value of other column will be also same
+
+$ sort -n file.txt
+This command is used for numeric sort
+
+
+
+$ sort -r file.txt
+This command is used for reverse sort
+
+
+$ sort -kn,m file.txt
+eg:- $ sort -k2,2n file.txt
+This command sorts file by column range; n is starting range, m is ending range and second n stands for numeric sort
+
+
+
+$ sort -u file.txt
+
+This command uniquely sorts the file
+
+************kill*************
+$ kill
+It stops a process. It kills or terminates a process without logging out or restarting the system. It sends signal to each process specified by process identifier.
+
+************ps*************
+$ ps
+It will display current running process in system. It is also used for view process running on system. It provides an information of current process with detailed information like CPU usage, user id, command name and memory usage.
+
+$ ps -ax
+It shows all current running process.
+
+************uptime*************
+$ uptime
+It shows how long system has been running. It will show current time of system, how many users are currently active and system load average
+
+************sleep*************
+$ sleep number [suffix]
+Delay or pause for specified amount of time. It actually causes the system with given amount of time. It suspends the system for mentioned duration then turns on or resume after the duration gets over.
+
+$ sleep (n)
+Sleeps for (n) seconds.
+
+$ sleep (nm)
+Sleeps for (n) minutes.
+
+$ sleep (nh)
+Sleeps for (n) hours.
+
+$ sleep (nd)
+Sleeps for (n) days.
+
+************seq*************
+$ seq n
+Prints number starting from 1 to n. It prints the numbers from first to last with an increment. By default, first and increment are both 1, and each number is printed on its own line. All numbers can be real, not just integers.
+
+$ seq n1 n2
+Prints number starting from n1 to n2.
+
+************cut*************
+$ cut c(n) filename
+Print characters in a line by specifying the position of the characters.
+
+$ cut -c(n), (n) file.txt
+To print more than one character at a time by specifying the character positions in a comma separated list.
+
+************paste*************
+$ paste filename
+Print the content of file. The paste command merges the lines from multiple files.This is a useful tool for merging a single file and also set of files.The paste command sequentially writes the corresponding lines from each file separated by a delimiter on terminal.
+
+$ paste filename
+Print the content of file. The paste command merges the lines from multiple files.This is a useful tool for merging a single file and also set of files.The paste command sequentially writes the corresponding lines from each file separated by a delimiter on terminal.
+
+$ paste filename1 filename2
+Prints the content of file1 and file2 side by side.
+************cal*************
+$ cal
+Displays a calendar. cal displays a simple calendar. If no arguments are mentioned, the current month is displayed on screen.
+
+$ cal –y
+This command prints the calendar for the whole year
+
+
+$ cal 12 2009
+This command prints the calendar for December 2009
+
+************unique*************
+$ unique filename
+It removes duplicate lines in a file and display unique contents. uniq reports or filters out repeated lines in a mentioned file. It suppress the duplicate lines from a file. It discards all the successive similar lines except one from the input and writes the output.
+
+$ uniq -c filename
+It counts occurrence of lines in a file.
+
+$ uniq -dfilename
+It prints only duplicate repeated lines.
+
+$ cat file.txt | uniq
+This command will display the file which shows only unique entries .It display duplicate record only once.
+
+$ cat file.txt | uniq | sort
+This command displays unique and sorted file
+
+$ cat file.txt | sort | uniq –d
+This command displays non unique entries in sorted form
+
+************du*************
+$ du
+Display and estimate disk usage in current directory. It is used to show Linux directory size or to know how large subdirectories are, including all the files and subdirectories it contains.
+
+$ du -a
+Display and estimate disk usage of all file in current directory.
+
+$ du -h
+Display result in human readable format like in kilobytes, megabytes.
+
+************find*************
+$ find
+List files in current and subdirectories. It is a very useful and easy handy command to search for files from the command line. It can be used to find files based on various search conditions like permissions, user ownership, modification date/time, size etc.
+
+$ find ./directory name
+Searches all the files in mentioned directory.
+
+************diff*************
+$ diff filename 1 filename2
+It displays the difference between two files, best way to find discrepancies b/w files which feels like they are same. It analyzes two files and prints the lines that are different. It gives output as a set of instructions for how to change one file in order to make it identical to the second file.
+
+************join*************
+$ join filename1 filename2
+Join two files based on matching or common field of data. Those who know SQL Join it is similar to like that. It combines two files based on the matching content lines found in each file. Using this command is quite easy and if used currently and in the right situation it can save lots of time and effort.
+
+************split*************
+$ split -l filename
+Split the file based on the number of lines and then makes a new file of partitioned content where file name will always start with x. It is used to split a file into two or more smaller files; default behaviour of split is to generate output files of a fixed size, default 1000 lines.
+
+$ split -b filename
+Specify the number of bytes that each partitioned file should contains.
+
+************hostname*************
+$ hostname
+Prints the hostname, like computer name. It is used to display the system’s Domain Name System or Service or Server name, and to display or set its hostname or Network Information Services domain name.
+
+************rev*************
+$ rev String
+It reverses the given string. It reverses the order of characters in every line; it copies the specified files to the standard output, reversing the order of each character in every line. If no files are mentioned, the standard input is read.
+
+************tar*************
+$ tar -czvf archivename.tar.gz /path/to/directory or file
+a.Compress an entire directory or a Single File where :
+c: Creates an archive.
+-z: Compresses the archive with gzip.
+-v: Display progress in the terminal while creating the archive. v is always optional in these commands.
+f: Allows you to specify the filename of the archive.
+
+
+$ tar -xzvf archive.tar.gz
+To extract an archive,where:
+x – extract files from archive.
+
+
+$ tar -cvf dir.tar dir
+tar rolls an entire directory into a single file. This command tar the dir into a tarboll called dir.tar, where -c is used to create an archive containing all specified items,-f is used for writing the archived item to spesified file,-v is used for verboed(description) the orignal directory will remain same.
+
+
+
+$ tar -xvf dir.tar
+This command is used to untar the directory
+
+************apt-get*************
+$ sudo apt-get install
+apt-get is the command-line tool for working with APT software packages which will install one or more packages desired for installation.
+
+
+$ sudo apt-get update
+It will download the package list from the repositories, updates them to get information on the newest versions of packages and their dependencies.
+
+
+$ sudo apt-get upgrade
+It is used to upgrade all the currently installed software packages on the system.
+
+************which*************
+$ which filename
+It shows path of command in your path. It takes one or more arguments where for each of its arguments it prints the full path of the executable. It returns the pathname of the files or link which would be executed in the current environment.
+
+************version*************
+$ filename -version
+This command is used to print out version information about OpenSSL (Secure Sockets Layer)or prints OpenSSL version information.
+
+************top*************
+$ top
+It displays top CPU process. It provides a current progress look at processor activity in real time. It can sort the tasks by CPU usage, memory usage and runtime. It displays a listing of the most CPU-intensive tasks on the system, and provides an interactive interface for manipulating processes.
+
+************who*************
+$ who
+Display who logged on along with time for current session. It is used to print information about users who are currently active in. It can only see a real user who logged in. It won’t see a user who is online with su command (switch user).
+
+************tail*************
+$ tail filename
+It displays last 10 lines of mentioned file. It is used to print the last N lines from the file on the terminal. It used with log files to read the last few lines to know about the error messages.
+
+$ tail filename -n 1000
+It outputs the last 100 lines of the filename.
+
+************head*************
+$ head filename
+Prints first 10 numbers of lines from the mentioned file.
+
+head -n myfile.txt
+Display the first n lines of mentioned file. If more than one file is mentioned, head will show the first ten lines of each file individually.
+
+************chmod*************
+$ chmod entity+permissiontype
+This command is used to grant or add permission (read,write,execute) to the entity(user,group,other)
+e.g. $ chmod u+r filename // add read permission to user(you)
+$ chmod ug+rwx filename // add read write execute permission to user and group
+$ chmod go-wx filename // remove write and execute permission from group and other but not to user(you) to access the file
+$ chmod a-rwx filename // remove all the permissions from user, group and rest of the world
+
+************chown*************
+$ sudo chown ec2-user myfile
+This command is used to change owner. Supose myfile is owned by root(admin) but root want to change the owner to ec2-user
+
+************su*************
+$ su <username>
+This command switches the user in the terminal for e.g to change to the user <username>
+
+************sudo*************
+$ mkdir /directory-name # permission denied
+$ sudo mkdir /directory-name # permission granted
+$ sudo rmdir /directory-name # permission granted
+sudo is a user which acts like a root, eg if u want to create any directory in root so you will be denied. But if you use sudo command, you will be asked for password to create directory in root. You can also get the permission to remove the directory
+
+
+************history*************
+$ history 
+History of all the work done on terminal is stored on bash shell secretly.
+
+$ history –c
+This command clears the history of commands from memory show the list of command which have word cd from history
+
+
+$ history | grep cd
+This command shows the lcommands from history which have word cd
+
+$ history | tail<or head>
+This command shows last or first 10 commands in history
+
+
+$ ~/.bash_history
+This command shows the path where the bash of history is residing in memory. It is a dotfile.
+
+
+$ echo > ~/. bash_history
+This command will delete the history from the file.
+
+************gunzip*************
+$ gunzip file.gz
+This command unzips the zip file
+
+************bunzip*************
+$ bunzip2 file.bz2
+bun zip is used to again compress the already compressed file
+
+$ bunzip2 -d file.bz2
+This command is used to decompress the file.
+
+
+$ zcat file.gz
+This command is used to display the compressed zip file
+
+************set*************
+$ set -o vi
+This command is used to set various properties of your shell. It will use vi style key binding in the terminal.
+
+
+$ set -o emacs
+This command uses emacs style key bindings in the terminal
+
+
+
+$ set –x
+This command will activate debugging from here
+
+
+$ set +x
+This command will deactivate debugging from here
+
+************unset*************
+    $ TEST=asdf
+    $ echo $TEST
+    asdf
+    $ unset TEST
+    $ echo $TEST
+
+This command is used to clear or unset the value of variable
+
+************uname*************
+$ uname
+uname prints out various system information in the simplest form
+
+
+$ uname -a
+If you use the -a flag for all, you get all sorts of information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
