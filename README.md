@@ -1,5 +1,5 @@
 # frequntly asked devops questions
-# questions categorized into:
+questions categorized into:
 1. Git and GitHub
 2. Maven
 3. Jenkins
