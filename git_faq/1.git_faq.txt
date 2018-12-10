@@ -35,3 +35,4 @@ Simple to Complex all git and GitHub interview questions I have compiled. please
 30. What is the release branch in git?
 31. How to establish ssh connection for github? or how to secure your github repository?
 32. What is git config? why git config required?
+33. What is webhook in git
