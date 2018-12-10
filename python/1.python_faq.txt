@@ -1,0 +1,10 @@
+Python-Frequently Asked Questions
+    1. What is the difference between  interpreted and compiled language ?
+    2. What is the difference between object oriented and procedural oriented languages?
+    3. What is the difference between high level and low level programming languages?
+    4. What is mutable and immutable in python?
+    5. What is string in python? Why string is immutable?
+    6. What is tuple in python ?
+    7. What is list in python?
+    8. What is dictionary in python?
+    9. What is set in python?
