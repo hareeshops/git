@@ -1,0 +1,37 @@
+# Author : Hareesh Arava
+# Date: 10-12-2018
+
+Simple to Complex all git and GitHub interview questions I have compiled. please find below.
+1. difference between git pull and git fetch?
+2. How to create a repository in local?
+3. How to add a new user to your GitHub project?
+4. How to create a git host server?
+5. What is rebasing?
+5. difference between git merge and git rebase?
+6. What is git stash?
+7. What is cherrypick?
+8. What is release in git?
+9. what is pull request git?
+10. how to revert to the previous commit in git?
+11. what is it ignore?
+12. how to create a new branch in git?
+13. how to switch different branch in git?
+14. what are git and GitHub?
+15. How to remove a file from git without removing it from your file system?
+16. Explain the advantages of Forking Workflow
+17. Tell me the difference between HEAD, working tree and index, in Git?
+18. Could you explain the Gitflow workflow?
+19. What is git diff?
+20. What is a tag in git?
+21. What is git push?
+22. What is git branch?
+23. What is git commit?
+24. What is git bisect, grep, show, status, and log
+25. What is git add, mv, reset, rm?
+26. difference between git clone and git init?
+27. difference between git and svn?
+28. How to list the branches merged into master
+29. How to know the list of files changed in Git.
+30. What is the release branch in git?
+31. How to establish ssh connection for github? or how to secure your github repository?
+32. What is git config? why git config required?
